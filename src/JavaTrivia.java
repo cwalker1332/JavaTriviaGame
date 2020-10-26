@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JavaTriviaGame {
+public class JavaTrivia {
 
     public static void main(String[] args) {
         //declare variables to be used
