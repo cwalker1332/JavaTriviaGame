@@ -27,7 +27,9 @@ public class LevelOne {
             {"Question 3?", "A", "A. Option 1", "B. Option 2", "C. Option 3", "D. Option 4"},
             {"Question 4?", "D", "A. Option 1", "B. Option 2", "C. Option 3", "D. Option 4"}};;
 
+    static void demi(){
 
+    }
     // method to retrieve questions
     public static String[] getLevelOneQuestion(){
         // initialize new Random object as rand
