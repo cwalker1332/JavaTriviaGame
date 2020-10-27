@@ -16,6 +16,9 @@ public class JavaTrivia {
 
         System.out.println("Hi " + name + ". Let's get started!");
 
+        // print out random question from level one
+        System.out.println(LevelOne.getLevelOneQuestion());
+
         // once 8 points achieved can move on to next lesson
         // at end of each lesson give the option to start over or continue to next lesson if accrued enough points
 

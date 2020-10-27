@@ -29,7 +29,7 @@ public class LevelOne {
 
 
     // method to retrieve questions
-    public static getLevelOneQuestion(){
+    public static String[] getLevelOneQuestion(){
         // initialize new Random object as rand
         Random rand = new Random();
 
@@ -38,9 +38,7 @@ public class LevelOne {
         int randomNum = rand.nextInt(5);
 
         //TODO: Figure out how to get all level one questions without creating one massive array
-        String typesQuestion = typesQna[randomNum];
-
-        return typesQuestion;
+        return typesQna[randomNum];
 
     }
 }
