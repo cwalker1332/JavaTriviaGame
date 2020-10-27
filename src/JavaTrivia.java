@@ -4,22 +4,26 @@ public class JavaTrivia {
 
     public static void main(String[] args) {
         //declare variables to be used
-        // int num1, num2, calc;
+        int score = 0;
 
         // create new Scanner named input
         Scanner input = new Scanner(System.in);
 
-        // instruct user to pick an operand then set operator equal to the operand/char they input
-        System.out.println("Please pick an operand.");
-        int operator = input.nextInt();
+        // instruct user to enter their name
+        System.out.println("Hi! Welcome to the Dream Corps Midterm Trivia Game!" +
+                " Enter your name so we know what to call you.");
+        String name = input.nextLine();
 
-        // instruct user to pick a number, or numbers, to be tested
-        // num1 is equal to the first integer they input
-        // num2 is equal to the second integer they put
-        System.out.println("Please type two numbers.");
-        num1 = input.nextInt();
-        num2 = input.nextInt();
+        System.out.println("Hi " + name + ". Let's get started!");
 
+        // print out random question from level one
+        System.out.println(LevelOne.getLevelOneQuestion());
 
+        // once 8 points achieved can move on to next lesson
+        // at end of each lesson give the option to start over or continue to next lesson if accrued enough points
+
+        // System.out.println("Good work! Would you like to review some topics or exit session?");
+        // write if else statement, if they choose 1. Review, then give list of topics to go back over or
+        // 2. exit and sout "see you later"
     }
 }
