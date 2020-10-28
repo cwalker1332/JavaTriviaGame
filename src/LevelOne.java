@@ -123,8 +123,8 @@ public class LevelOne {
                 // if statement to allow user to move on to level two once they achieve 8 correct answers
                 if (score >= 8){
                     System.out.println("You're doing great! Did you want to move on to Level Two?");
-                    LevelTwo moveOn = new LevelTwo();
-                    moveOn.startLevelTwo();
+                    LevelTwo nextLevel = new LevelTwo();
+                    nextLevel.startLevelTwo();
                 }
             }
         }
