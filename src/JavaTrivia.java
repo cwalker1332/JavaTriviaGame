@@ -3,10 +3,9 @@ import java.util.Scanner;
 public class JavaTrivia {
 
     public static void main(String[] args) {
-        //declare variables to be used
-        int score = 0;
+        //TODO: can potentially do a high score feature
 
-        // create new Scanner named input
+        // create new Scanner object
         Scanner input = new Scanner(System.in);
 
         // instruct user to enter their name
@@ -16,14 +15,10 @@ public class JavaTrivia {
 
         System.out.println("Hi " + name + ". Let's get started!");
 
-        // print out random question from level one
-        System.out.println(LevelOne.getLevelOneQuestion());
+        // start level one
+        LevelOne.startLevelOne();
 
-        // once 8 points achieved can move on to next lesson
-        // at end of each lesson give the option to start over or continue to next lesson if accrued enough points
-
-        // System.out.println("Good work! Would you like to review some topics or exit session?");
-        // write if else statement, if they choose 1. Review, then give list of topics to go back over or
-        // 2. exit and sout "see you later"
+        System.out.println("Good work! Would you like to review some topics or exit session?");
+        // TODO: write if else statement, if they choose 1. Review, then give list of topics to go back over or 2. exit and sout "Good work today! See you next time!"
     }
 }
