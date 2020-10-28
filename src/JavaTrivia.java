@@ -4,6 +4,7 @@ public class JavaTrivia {
 
     public static void main(String[] args) {
         //declare variables to be used
+        //TODO: can potentially do a high score feature
         int score = 0;
 
         // create new Scanner named input
@@ -19,11 +20,10 @@ public class JavaTrivia {
         // print out random question from level one
         System.out.println(LevelOne.getLevelOneQuestion());
 
-        // once 8 points achieved can move on to next lesson
-        // at end of each lesson give the option to start over or continue to next lesson if accrued enough points
+        //TODO: for loop to run through questions and increase score
+        //TODO: if-else statement within for loop to give option to move on to next level when sufficient points (8) are reached or start over for more questions
 
         // System.out.println("Good work! Would you like to review some topics or exit session?");
-        // write if else statement, if they choose 1. Review, then give list of topics to go back over or
-        // 2. exit and sout "see you later"
+        // TODO: write if else statement, if they choose 1. Review, then give list of topics to go back over or 2. exit and sout "Good work today! See you next time!"
     }
 }
