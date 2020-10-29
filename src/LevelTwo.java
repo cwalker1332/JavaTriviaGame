@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class LevelTwo {
 
     public static void startLevelTwo(){
-        //TODO: replace questions with level two questions
-
         // reset score
         int score = 0;
 
@@ -111,7 +109,7 @@ public class LevelTwo {
             System.out.println(levelTwoQuestions[i].prompt);
 
             // create variable to hold whatever user answers with
-            // TODO: print statement to tell user to enter their answer
+            System.out.println("Please select one of the multiple choice options.");
             String selection = input.nextLine();
 
             // if statement to increase score if user's selection is correct
