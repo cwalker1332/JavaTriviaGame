@@ -114,16 +114,18 @@ public static void startLevelThree(){
         System.out.println(levelThreeQuestions[i].prompt);
 
         // create variable to hold whatever user answers with
-        // TODO: print statement to tell user to enter their answer (A-D)
+        System.out.println("Please select one of the multiple choice options.");
         String selection = input.nextLine();
 
         // if statement to increase score if user's selection is correct
         if(selection.equalsIgnoreCase(levelThreeQuestions[i].answer)){
             score++;
+            if (score >= 8){
+                JavaTrivia goBack = new JavaTrivia();
+                goBack.restart();
+            }
         }
     }
-    // TODO: switch statement to give user choice to continue with more questions, start back from level one, or exit
-
     System.out.println("Your score is: " + score + "/" + levelThreeQuestions.length);
 }
 }
