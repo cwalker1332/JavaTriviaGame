@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class LevelOne {
 
-    public static void startLevelOne(){
+    public static void startLevelOne() {
         // initialize score variable
         int score = 0;
 
@@ -68,7 +68,7 @@ public class LevelOne {
         Scanner input = new Scanner(System.in);
 
         // create for loop to run through questions
-        for(int i = 0; i < levelOneQuestions.length; i++){
+        for (int i = 0; i < levelOneQuestions.length; i++) {
             //TODO: figure out how to randomize without repeating
 
             // print question with multiple choice options
@@ -79,20 +79,34 @@ public class LevelOne {
             String selection = input.nextLine();
 
             // if statement to increase score if user's selection is correct
-            if(selection.equalsIgnoreCase(levelOneQuestions[i].answer)){
+            if (selection.equalsIgnoreCase(levelOneQuestions[i].answer)) {
                 score++;
 
-                // TODO: make option to let user choose to continue with more questions or move on using switch statement
+                // TODO: figure out how to let user continue from last question rather than start all over
 
                 // if statement to allow user to move on to level two once they achieve 8 correct answers
-                if (score >= 5){
-                    System.out.println("You're doing great! Did you want to move on to Level Two?");
-                    LevelTwo nextLevel = new LevelTwo();
-                    nextLevel.startLevelTwo();
+                if (score >= 5) {
+                    System.out.println("You're doing great! Did you want to move on to Level Two? (Select 1 or 2)\n" +
+                            "1. Yes, move on to Level 2\n" +
+                            "2. No, continue level 1\n");
+
+                    int choice = input.nextInt();
+
+                    switch (choice) {
+                        case 1:
+                            System.out.println("Okay, moving on to level 2!");
+                            LevelTwo nextLevel = new LevelTwo();
+                            nextLevel.startLevelTwo();
+                            break;
+                        case 2:
+                            System.out.println("Okay, restarting level 1!");
+                            startLevelOne();
+                            break;
+                    }
                 }
             }
+            System.out.println("Your score is: " + score + "/" + levelOneQuestions.length);
         }
-        System.out.println("Your score is: " + score + "/" + levelOneQuestions.length);
     }
 }
 
