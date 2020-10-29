@@ -43,7 +43,7 @@ public class AlternativeApproach {
                     "B. No"}};;
 
     static String[][] exceptionsQna = new String[][]{
-            {"WWhat is the difference between throw and throws?", "B",
+            {"What is the difference between throw and throws?", "B",
                     "A. Throw declares an exception, while throws is used to throw an exception",
                     "B. Throw is used to throw an exception, while throws declares an exception"},
             {"Which is true about Java exception handling?", "D",
