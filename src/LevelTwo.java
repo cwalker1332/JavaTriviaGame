@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class LevelTwo {
 
-    public static void startLevelTwo(){
+    public static void startLevelTwo() {
         // reset score
         int score = 0;
 
@@ -43,7 +43,7 @@ public class LevelTwo {
         Scanner input = new Scanner(System.in);
 
         // create for loop to run through questions
-        for(int i = 0; i < levelTwoQuestions.length; i++){
+        for (int i = 0; i < levelTwoQuestions.length; i++) {
             //TODO: figure out how to randomize without repeating
 
             // print question with multiple choice options
@@ -54,19 +54,33 @@ public class LevelTwo {
             String selection = input.nextLine();
 
             // if statement to increase score if user's selection is correct
-            if(selection.equalsIgnoreCase(levelTwoQuestions[i].answer)){
+            if (selection.equalsIgnoreCase(levelTwoQuestions[i].answer)) {
                 score++;
 
-                // TODO: make option to let user choose to continue with more questions or move on using switch statement
+                // TODO: figure out how to let user continue from last question rather than start all over
 
                 // if statement to allow user to move on to level three once they achieve 8 correct answers
-                if (score >= 3){
-                    System.out.println("You're doing great! Did you want to move on to Level Three?");
-                    LevelThree nextLevel = new LevelThree();
-                    nextLevel.startLevelThree();
+                if (score >= 3) {
+                    System.out.println("You're doing great! Did you want to move on to Level Three? (Select 1 or 2)\n" +
+                            "1. Yes, move on to Level 3\n" +
+                            "2. No, continue level 2");
+
+                    int choice = input.nextInt();
+
+                    switch (choice) {
+                        case 1:
+                            System.out.println("Okay, moving on to level 3!");
+                            LevelThree nextLevel = new LevelThree();
+                            nextLevel.startLevelThree();
+                            break;
+                        case 2:
+                            System.out.println("Okay, restarting level 2!");
+                            startLevelTwo();
+                            break;
+                    }
                 }
             }
+            System.out.println("Your score is: " + score + "/" + levelTwoQuestions.length);
         }
-        System.out.println("Your score is: " + score + "/" + levelTwoQuestions.length);
     }
 }

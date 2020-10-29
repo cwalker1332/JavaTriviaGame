@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class JavaTrivia {
 
+    //TODO: have to correct each question to only allow for char responses between A and D
+
     public static void restart(){
         // create new Scanner object
         Scanner input = new Scanner(System.in);
@@ -30,7 +32,7 @@ public class JavaTrivia {
                 break;
             case 4:
                 System.out.println("Good work today! See you next time! :)");
-                break;
+                System.exit(0);
             default:
                 System.out.println("That was an invalid input. Please select 1-4.");
                 restart();
