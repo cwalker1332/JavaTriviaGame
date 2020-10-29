@@ -25,7 +25,7 @@ public class LevelTwo {
         String q5 = "What is pseudocode?\n" +
                 "A. Informal descriptions of algorithms\n" +
                 "B. Strict syntax of code";
-        String q6 = "Is an ‘if statement’, and example of a Control Structure?\n" +
+        String q6 = "Is an ‘if statement’ an example of a control structure?\n" +
                 "A. True \n" +
                 "B. False";
 
