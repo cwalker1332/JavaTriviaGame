@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c80b8821-b202-4c0e-b347-eedcea501d57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JavaTriviaGame.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,5 +62,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="272" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1603900053731">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="634" y="272" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1440.823@0.23.1440.823" timestamp="1603900053731" />
+    <state x="735" y="167" key="RollbackChangesDialog" timestamp="1603899202982">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="735" y="167" key="RollbackChangesDialog/0.23.1440.823@0.23.1440.823" timestamp="1603899202982" />
   </component>
 </project>
