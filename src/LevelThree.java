@@ -120,10 +120,12 @@ public static void startLevelThree(){
         // if statement to increase score if user's selection is correct
         if(selection.equalsIgnoreCase(levelThreeQuestions[i].answer)){
             score++;
+            if (score >= 8){
+                JavaTrivia goBack = new JavaTrivia();
+                goBack.restart();
+            }
         }
     }
-    // TODO: switch statement to give user choice to continue with more questions, start back from level one, or exit
-
     System.out.println("Your score is: " + score + "/" + levelThreeQuestions.length);
 }
 }
