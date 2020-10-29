@@ -32,7 +32,7 @@ public class JavaTrivia {
                 System.out.println("Good work today! See you next time! :)");
                 break;
             default:
-                System.out.println("That was invalid input. Please select 1-4.");
+                System.out.println("That was an invalid input. Please select 1-4.");
                 restart();
         }
     }
@@ -52,6 +52,5 @@ public class JavaTrivia {
 
         // start level one (this will go through all three levels then continue whatever is left on main)
         LevelOne.startLevelOne();
-
     }
 }

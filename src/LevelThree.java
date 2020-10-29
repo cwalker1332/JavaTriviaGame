@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class LevelThree {
 
 public static void startLevelThree(){
-    //TODO: fix to take in score from level two
-
     // reset score
     int score = 0;
 

@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c80b8821-b202-4c0e-b347-eedcea501d57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JavaTriviaGame.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LevelOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LevelOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +47,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="JavaTrivia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaTrivia" />
+      <module name="JavaTrivia" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaTrivia" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,5 +84,40 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom" timestamp="1603993355019">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1603993355019" />
+    <state width="853" height="210" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1603919202798" />
+    <state width="853" height="210" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1603917805777" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center" timestamp="1603993355017">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1603993355017" />
+    <state width="853" height="210" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1603919202797" />
+    <state width="853" height="210" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1603917805776" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left" timestamp="1603993355016">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1603993355016" />
+    <state width="853" height="210" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1603919202797" />
+    <state width="853" height="210" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1603917805776" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right" timestamp="1603993355019">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1603993355019" />
+    <state width="853" height="210" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1603919202797" />
+    <state width="853" height="210" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1603917805776" />
+    <state x="420" y="213" key="refactoring.ChangeSignatureDialog" timestamp="1603903455129">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="420" y="213" key="refactoring.ChangeSignatureDialog/0.23.1440.825@0.23.1440.825" timestamp="1603903455129" />
+    <state x="385" y="171" width="670" height="674" key="search.everywhere.popup" timestamp="1603921621247">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="385" y="171" width="670" height="674" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1603921621247" />
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1603916025748" />
   </component>
 </project>

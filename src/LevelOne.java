@@ -3,101 +3,65 @@ import java.util.Scanner;
 public class LevelOne {
 
     public static void startLevelOne(){
-        //TODO: replace questions with level one questions
-
         // initialize score variable
         int score = 0;
 
         // initialize level one questions
-        String q1 = "How is time complexity measured?\n" +
-                "A. By counting the number of statements in an algorithm\n" +
-                "B. By counting the number of primitive operations performed by the algorithm on a given input size\n" +
-                "C. By counting the size of data input to the algorithm\n" +
+        String q1 = "What is the proper way to declare a variable?\n" +
+                "A. VariableType variableName;\n" +
+                "B. VariableName;\n" +
+                "C. VariableName variableType;\n" +
+                "D. VariableType;";
+        String q2 = "The following code will result in: int num = 6.7;\n" +
+                "A. A runtime error\n" +
+                "B. Num being 6\n" +
+                "C. Num being 7\n" +
+                "D. A compilation error";
+        String q3 = "Choose the appropriate data type for: 8,675,309\n" +
+                "A. int\n" +
+                "B. char\n" +
+                "C. double\n" +
+                "D. short";
+        String q4 = "What is the difference between a float and a double?\n" +
+                "A. A float is a real number with single-precision 32-bit, and a double is a real number with double-precision 64-bit.\n" +
+                "B. A double is a real number with single-precision 32-bit, and a float is a real number with float-precision 64-bit.";
+        String q5 = "What type of control flow is defined here? This statement is equivalent to an if-else statement, with one key difference. Of all the blocks of code defined in an if-else statement, only one will be executed. In this statement, multiple blocks of code can be executed.\n" +
+                "A. Ternary Operator Statement\n" +
+                "B. Switch Statement";
+        String q6 = "What is the difference between a continue and break statement?\n" +
+                "A. A break statement terminates a loop and a continue statement terminates the current loop iteration\n" +
+                "B. Only a continue statement may have a label\n" +
+                "C. Both can be used with a switch statement\n" +
+                "D. Only a break statement may have a label";
+        String q7 = "What is the difference between do-while and while statements?\n" +
+                "A. Code within while blocks are always executed at least once before condition is evaluated\n" +
+                "B. Code within do-while blocks are always executed at least once before condition is evaluated";
+        String q8 = "What are the three important components that help determine how many times a for-loop will loop?\n" +
+                "A. Initialization, Termination/Condition, Increment/Decrement\n" +
+                "B. Initialization, Void, Termination/Condition";
+        String q9 = "What is Throw?\n" +
+                "A. Java try block is used to enclose the code that might throw an exception. It must be used within the method. Java try block must be followed by either catch or finally block.\n" +
+                "B. Java Throw is not an exception handling keyword\n" +
+                "C. Java throw keyword is used to explicitly throw an exception. We can throw either checked or uncheck exception in java by throw keyword. The throw keyword is mainly used to throw custom exception.\n" +
                 "D. None of the above";
-        String q2 = "Algorithms A and B have a worst-case running time of O(n) and O(log n), respectively. Therefore, algorithm B always runs faster than algorithm A\n" +
-                "A. True\n" +
-                "B. False";
-        String q3 = "An algorithm whose complexity does NOT change with the input size is:\n" +
-                "A. 0(1)\n" +
-                "B. 0(n)\n" +
-                "C. 0(n2)";
-        String q4 = "The fastest algorithms are:\n" +
-                "A. 0(1)\n" +
-                "B. 0(n)\n" +
-                "C. 0(n2)";
-        String q5 = "JSON stands for:\n" +
-                "A. Java Standard Output Network\n" +
-                "B. JavaScript Object Notation\n" +
-                "C. JavaScript Output Name\n" +
-                "D. Java Source Open Network";
-        String q6 = "What is the correct format for writing JSON key/value pairs?\n" +
-                "A. 'key : value'\n" +
-                "B. ‘key’ = 'value'\n" +
-                "C. key = \"value\"\n" +
-                "D. \"key\" : \"value\"";
-        String q7 = "Which of the following examples is a correct way to represent a JSON object?\n" +
-                "A. {[ “sports” : [ “football” , “cricket” , “hockey” ] }]\n" +
-                "B. { “sports” : [ “football” , “cricket” , “hockey” ] }\n" +
-                "C. [ “sports” : { “football” , “cricket” , “hockey” } ]\n" +
-                "D. { “sports” - [ “football” : “cricket” : “hockey” ] }";
-        String q8 = "Is JSON case sensitive?\n" +
-                "A. Yes\n" +
-                "B. No";
-        String q9 = "What is the difference between throw and throws?\n" +
-                "A. Throw declares an exception, while throws is used to throw an exception\n" +
-                "B. Throw is used to throw an exception, while throws declares an exception";
-        String q10 = "Which is true about Java exception handling?\n" +
-                "A. A finally clause of a try-catch statement is only executed if at least one clause has been triggered\n" +
-                "B. A catch clause may only catch object of the class Exception\n" +
-                "C. Finally is required for a try-catch statement to run\n" +
-                "D. If an object is thrown by a throw statement then it must be a subclass of the Throwable class";
-        String q11 = "What happens during execution if a negative value is used for an array index?\n" +
-                "A. An IndexOutOfBoundsException is thrown\n" +
-                "B. A NumberFormatException is thrown\n" +
-                "C. The first slot of the array is used\n" +
-                "D. This is an Error so the program immediately terminates";
-        String q12 = "An exception that occurs at compile time is called a(n):\n" +
-                "A. Error\n" +
-                "B. Unchecked Exception\n" +
-                "C. Checked Exception";
-        String q13 = "Fill in the blank. If something within a class is declared as ______ then it can only be accessed within its class and all inheriting or parent classes, but if it is declared as _____ then it is only accessible within its class.?\n" +
-                "A. public, private\n" +
-                "B. public, protected\n" +
-                "C. protected, private\n" +
-                "D. protected, public";
-        String q14 = "What is the role of a constructor?\n" +
-                "A. To create some type of change in the state of an object\n" +
-                "B. To create an instance of a class\n" +
-                "C. To create names for a method";
-        String q15 = "Which of the following is a mechanism by which an object acquires the properties of another object?\n" +
-                "A. Encapsulation\n" +
-                "B. Inheritance\n" +
-                "C. Abstraction\n" +
-                "D. Polymorphism";
-        String q16 = "Which of the following concepts is often expressed by the phrase, ‘One method, multiple implementations’?\n" +
-                "A. Encapsulation\n" +
-                "B. Inheritance\n" +
-                "C. Abstraction\n" +
-                "D. Polymorphism";
+        String q10 = "What is Throws?\n" +
+                "A. Java catch block is used to handle the Exception. It must be used after the try block only. You can use multiple catch block with a single try.\n" +
+                "B. Java finally block is a block that is used to execute important code such as closing connection, stream etc. Java finally block is always executed whether exception is handled or not. Java finally block follows try or catch block.\n" +
+                "C. Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception so it is better for the programmer to provide the exception handling code.\n" +
+                "D. None of the above";
 
         // create an array with level one questions and their corresponding answers
         Questions[] levelOneQuestions = {
-                new Questions(q1, "B"),
-                new Questions(q2, "B"),
+                new Questions(q1, "A"),
+                new Questions(q2, "D"),
                 new Questions(q3, "A"),
                 new Questions(q4, "A"),
                 new Questions(q5, "B"),
-                new Questions(q6, "D"),
+                new Questions(q6, "A"),
                 new Questions(q7, "B"),
                 new Questions(q8, "A"),
-                new Questions(q9, "B"),
-                new Questions(q10, "D"),
-                new Questions(q11, "A"),
-                new Questions(q12, "C"),
-                new Questions(q13, "C"),
-                new Questions(q14, "B"),
-                new Questions(q15, "B"),
-                new Questions(q16, "D")
+                new Questions(q9, "C"),
+                new Questions(q10, "C")
         };
 
         // create Scanner object
@@ -111,7 +75,7 @@ public class LevelOne {
             System.out.println(levelOneQuestions[i].prompt);
 
             // create variable to hold whatever user answers with
-            // TODO: print statement to tell user to enter their answer
+            System.out.println("Please select one of the multiple choice options.");
             String selection = input.nextLine();
 
             // if statement to increase score if user's selection is correct
@@ -121,7 +85,7 @@ public class LevelOne {
                 // TODO: make option to let user choose to continue with more questions or move on using switch statement
 
                 // if statement to allow user to move on to level two once they achieve 8 correct answers
-                if (score >= 8){
+                if (score >= 5){
                     System.out.println("You're doing great! Did you want to move on to Level Two?");
                     LevelTwo nextLevel = new LevelTwo();
                     nextLevel.startLevelTwo();
