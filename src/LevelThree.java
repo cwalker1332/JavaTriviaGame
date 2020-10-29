@@ -114,7 +114,7 @@ public static void startLevelThree(){
         System.out.println(levelThreeQuestions[i].prompt);
 
         // create variable to hold whatever user answers with
-        // TODO: print statement to tell user to enter their answer (A-D)
+        System.out.println("Please select one of the multiple choice options.");
         String selection = input.nextLine();
 
         // if statement to increase score if user's selection is correct
