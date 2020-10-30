@@ -123,6 +123,7 @@ public static void startLevelThree(){
         System.out.println("Your score is: " + score + "/" + levelThreeQuestions.length);
         }
 
+    // go to restart method in main to give user option to restart a level or quit
     JavaTrivia goBack = new JavaTrivia();
     goBack.restart();
 }
