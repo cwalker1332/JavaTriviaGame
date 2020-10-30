@@ -104,6 +104,23 @@ public class LevelOne {
             }
             System.out.println("Your score is: " + score + "/" + levelOneQuestions.length);
         }
+        System.out.println("Would you like to move on to level 2?\n" +
+                "1. Yes\n" +
+                "2. No, exit session.");
+
+        int next = input.nextInt();
+
+        switch (next) {
+            case 1:
+                System.out.println("Okay, moving on to level 2!");
+                LevelTwo nextLevel = new LevelTwo();
+                nextLevel.startLevelTwo();
+                break;
+            case 2:
+                System.out.println("Good work today! See you next time :)");
+                System.exit(0);
+                break;
+        }
     }
 }
 
