@@ -82,10 +82,8 @@ public class LevelOne {
             if (selection.equalsIgnoreCase(levelOneQuestions[i].answer)) {
                 score++;
 
-                // TODO: figure out how to let user continue from last question rather than start all over
-
                 // if statement to allow user to move on to level two once they achieve 8 correct answers
-                if (score >= 5) {
+                if (score == 5) {
                     System.out.println("You're doing great! Did you want to move on to Level Two? (Select 1 or 2)\n" +
                             "1. Yes, move on to Level 2\n" +
                             "2. No, continue level 1\n");
@@ -99,13 +97,29 @@ public class LevelOne {
                             nextLevel.startLevelTwo();
                             break;
                         case 2:
-                            System.out.println("Okay, restarting level 1!");
-                            startLevelOne();
+                            System.out.println("Okay, continuing level 1!");
                             break;
                     }
                 }
             }
             System.out.println("Your score is: " + score + "/" + levelOneQuestions.length);
+        }
+        System.out.println("Would you like to move on to level 2?\n" +
+                "1. Yes\n" +
+                "2. No, exit session.");
+
+        int next = input.nextInt();
+
+        switch (next) {
+            case 1:
+                System.out.println("Okay, moving on to level 2!");
+                LevelTwo nextLevel = new LevelTwo();
+                nextLevel.startLevelTwo();
+                break;
+            case 2:
+                System.out.println("Good work today! See you next time :)");
+                System.exit(0);
+                break;
         }
     }
 }
