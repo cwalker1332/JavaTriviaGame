@@ -60,7 +60,7 @@ public class LevelTwo {
                 // TODO: figure out how to let user continue from last question rather than start all over
 
                 // if statement to allow user to move on to level three once they achieve 8 correct answers
-                if (score >= 3) {
+                if (score == 3) {
                     System.out.println("You're doing great! Did you want to move on to Level Three? (Select 1 or 2)\n" +
                             "1. Yes, move on to Level 3\n" +
                             "2. No, continue level 2");
@@ -74,8 +74,7 @@ public class LevelTwo {
                             nextLevel.startLevelThree();
                             break;
                         case 2:
-                            System.out.println("Okay, restarting level 2!");
-                            startLevelTwo();
+                            System.out.println("Okay, continuing level 2!");
                             break;
                     }
                 }

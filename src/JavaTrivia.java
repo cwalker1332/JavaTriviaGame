@@ -9,10 +9,10 @@ public class JavaTrivia {
         Scanner input = new Scanner(System.in);
 
         // give user option to exit after finishing the three levels or go back to study again
-        System.out.println("Good work! Would you like to review some more topics or exit the session? (Type 1, 2, 3, or 4)\n" +
+        System.out.println("Good work! Would you like to review some more or exit the session? (Type 1, 2, 3, or 4)\n" +
                 "1. Review Level 1\n" +
                 "2. Review Level 2\n" +
-                "3. Review Level 3\n" +
+                "3. Continue Level 3\n" +
                 "4. Exit");
 
         int choice = input.nextInt();
