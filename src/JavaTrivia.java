@@ -5,6 +5,7 @@ public class JavaTrivia {
 
     //TODO: have to correct each question to only allow for char responses between A and D
 
+    // give user option to restart level(s) or exit session
     public static void restart(){
         // create new Scanner object
         Scanner input = new Scanner(System.in);

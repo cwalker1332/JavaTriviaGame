@@ -82,7 +82,7 @@ public class LevelOne {
             if (selection.equalsIgnoreCase(levelOneQuestions[i].answer)) {
                 score++;
 
-                // if statement to allow user to move on to level two once they achieve 8 correct answers
+                // if statement to allow user to move on to level 2 once they achieve 8 correct answers or continue level 1
                 if (score == 5) {
                     System.out.println("You're doing great! Did you want to move on to Level Two? (Select 1 or 2)\n" +
                             "1. Yes, move on to Level 2\n" +
@@ -104,6 +104,8 @@ public class LevelOne {
             }
             System.out.println("Your score is: " + score + "/" + levelOneQuestions.length);
         }
+
+        // ask user if they would like to move on to level 2 or exit
         System.out.println("Would you like to move on to level 2?\n" +
                 "1. Yes\n" +
                 "2. No, exit session.");
